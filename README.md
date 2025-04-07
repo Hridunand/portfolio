@@ -25,7 +25,7 @@ This is a personal portfolio website built using HTML and CSS. It showcases my p
 - **Rain Detector** – A detailed explanation of the automatic rain protection system
 - **Contact** – Ways to reach me
 
-## 🧑‍💻 Hosting
+##  Hosting
 
 The site is hosted using **GitHub Pages**, with the root set to the `/docs` folder.
 
