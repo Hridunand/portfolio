@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hridunand M - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,6 +58,8 @@
             justify-content: center;
             gap: 1.5rem;
             padding: 0;
+            margin: 1rem 0 0;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -107,6 +111,37 @@
             border-left: 4px solid #66bb6a;
             padding-left: 1rem;
             margin-top: 2rem;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+                margin: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
