@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Automatic Rain Detector and Cloth Protection System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+  <div class="max-w-4xl mx-auto py-10 px-4">
+    <h1 class="text-4xl font-bold mb-6 text-center">Automatic Rain Detector and Cloth Protection System</h1>
+
+    <p class="text-lg mb-4">
+      This project is designed to automatically detect rain using a rain sensor and protect clothes that are being dried outdoors. The core components include an Arduino Uno, a rain sensor module, and a servo motor.
+    </p>
+
+    <p class="text-lg mb-6">
+      When rain is detected, the system automatically pulls a protective cover over the clothes, offering a hands-free solution for unpredictable weather.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4">Circuit Diagram</h2>
+    <img src="assets/images/circuit.jpg" alt="Circuit Diagram" class="mb-8 rounded-lg shadow-md">
+
+    <h2 class="text-2xl font-semibold mb-4">Arduino Code</h2>
+    <pre class="bg-gray-800 text-green-400 p-4 rounded-md overflow-x-auto mb-8"><code>
+#include &lt;Servo.h&gt;
+
+Servo tap_servo;
+int sensor_pin = 4;
+int tap_servo_pin = 5;
+int val;
+
+void setup() {
+  pinMode(sensor_pin, INPUT);
+  tap_servo.attach(tap_servo_pin);
+}
+
+void loop() {
+  val = digitalRead(sensor_pin);
+  if (val == 0) {
+    tap_servo.write(0);
+  }
+  if (val == 1) {
+    tap_servo.write(180);
+  }
+}
+    </code></pre>
+
+    <h2 class="text-2xl font-semibold mb-4">Real-life Setup</h2>
+    <img src="assets/images/real-setup.jpg" alt="Real Setup Photo" class="mb-8 rounded-lg shadow-md">
+
+    <h2 class="text-2xl font-semibold mb-4">Working Demonstration</h2>
+    <video controls class="rounded-lg shadow-lg w-full mb-8">
+      <source src="assets/videos/demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <a href="projects.html" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+      ← Back to Projects
+    </a>
+  </div>
+</body>
+</html>
