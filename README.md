@@ -1,10 +1,20 @@
-# 🌐 Hridunand M - Portfolio Website
+#  Hridunand M - Portfolio Website
 
-This is a personal portfolio website built using HTML, CSS, and Tailwind CSS. It showcases my projects and provides information about me in a clean, dark-themed layout.
+This is a personal portfolio website built using HTML and CSS. It showcases my projects and provides information about me in a clean, dark-themed layout.
 
 ##  Website Structure
 
-portfolio/ │ ├── docs/ # Main website folder (used for GitHub Pages) │ ├── index.html # Home page │ ├── about.html # About me page │ ├── projects.html # List of projects │ ├── rain-detector.html # Detailed project page for rain detector system │ ├── contact.html # Contact page │ └── assets/ (optional) # Folder for images, videos, icons, etc. │ └── README.md # This file
+📁 portfolio/
+│
+├── 📁 images/              # Folder for all project-related images
+├── 📁 videos/              # Folder for video demonstrations or walkthroughs
+│
+├── README.md              # Project description and instructions (you can improve it further)
+├── index.html             # Home page
+├── about.html             # About Me page
+├── contact.html           # Contact information 
+├── projects.html          # Projects overview list
+├── rain-detector.html     # Detailed page for the Rain Detector project
 
 
 ##  Pages Overview
